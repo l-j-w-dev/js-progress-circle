@@ -1,9 +1,3 @@
-drawCircle(document.querySelector('.circle'), 10, 30, 1.5, '#f44', '#44f');
-		drawCircle(document.querySelector('.circle2'), 20, 60, 0.5, '#f4f', '#4f4');
-		drawCircle(document.querySelector('.circle3'), 10, 20, 0.3, '#f55', '#55f');
-		drawCircle(document.querySelector('.circle4'), 8, 83, 1, '#f55', '#55f');
-
-
 		function drawCircle(parent, thick, percent, tick, color1, color2) { // 부모요소, 두께, 퍼센트, 채워지는 속도, 꽉찼을때 color, 시작 color
 			const pt = percent;
 			const radius = parent.clientHeight / 2;
