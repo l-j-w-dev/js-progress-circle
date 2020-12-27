@@ -3,6 +3,7 @@ function drawCircle(parent, radius, thick, percent, tick, color1, color2) { // ë
 	parent.style.width = 2 * radius + 'px';
 	parent.style.height = 2 * radius + 'px';
 	parent.style.border = 'none';
+	parent.style.position = 'relative';
 	//const radius = parent.clientHeight / 2;
 	if (percent >= 100) {
 		percent = 99.99;
@@ -17,12 +18,12 @@ function drawCircle(parent, radius, thick, percent, tick, color1, color2) { // ë
 
 	let div = document.createElement('div');
 	div.className = 'percent';
+	parent.appendChild(div);
 	div.style.position = 'absolute';
 	div.style.left = '50%';
 	div.style.top = '50%';
 	div.style.transform = 'translate(-50%, -50%)';
 	div.style.color = '#CCDDCC';
-	parent.appendChild(div);
 	let size = 0;
 	let interval = setInterval(function () {
 		if (size + tick >= percent) {
