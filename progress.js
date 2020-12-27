@@ -1,4 +1,4 @@
-		function drawCircle(parent, thick, percent, tick, color1, color2) { // 부모요소, 두께, 퍼센트, 채워지는 속도, 꽉찼을때 color, 시작 color
+		export function drawCircle(parent, thick, percent, tick, color1, color2) { // 부모요소, 두께, 퍼센트, 채워지는 속도, 꽉찼을때 color, 시작 color
 			const pt = percent;
 			const radius = parent.clientHeight / 2;
 			if (percent >= 100) {
